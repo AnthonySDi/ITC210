@@ -9,24 +9,25 @@
 
     <style>
         body {
-            background: grey;
+            background: grey; /*So we can see the wrapper*/
         }
         #wrapper{
             margin: 20px auto;
-            
+            width: 980px;
         }
-        #header-img{
-            z-index:-1;
+        /*++++++++ Header CSS Starts ++++++++ */
+        #header-img{ /*this is the big image and it's sitting under all the other items*/
+            z-index:-1; /*this is what makes it under all the other items*/
             position:absolute;
             left:0;
             top: 0;
         }
-        header ul{
+        header ul{ /* centers and restricts the nav to 50% of the contiaining div */
             margin: 0 auto;
             list-style-type: none;
             width: 50%;
         }
-        header ul li {
+        header ul li { /*Makes the navigation horizontal*/
             float: left;
             text-align: center;
             width: 25%;
@@ -36,23 +37,23 @@
         header ul li a{
             text-decoration: none
         }
-        header ul li a:hover {
+        header ul li a:hover { /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
             background: black;
             display:block;
         }
-        #header-nav {
+        #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
             height: 100px;
             border-bottom: 1px solid black; 
             width: 940px;
             z-index: 2;
         }
-        header{
+        header{ /*This is the div that contains the nav and header imgs*/
             height: 600px;
             width: 940px;
             margin: 0 auto;
-            position: relative;
+            position: relative; /*Everything that is position absolute uses this as a parent*/
         }
-        .logo-lower {
+        .logo-lower { /*This is th logo at the bottom of the big header img*/
             position: absolute;
             top: 405px;
             left:400px;
@@ -62,7 +63,7 @@
             left: 20px;
             top: 12px;
         }
-        #header-social{
+        #header-social{ /*this is a div that contains the social media links*/
             height: 100px;
             width: 25%;
             position: absolute;
@@ -70,10 +71,19 @@
             top: 0;
             text-align: center;
         }
-        #header-social i {
+        #header-social i { /*This is the LinkedIN and Facebook font Awesome*/
             font-size: 4em;
             line-height: 100px;
             margin-right: 15px;
+        }
+                /*++++++++  Header CSS ENDS  ++++++++ */
+
+        main {
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        main p {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -113,7 +123,15 @@
         <img id="header-img" src="images/header-img.png" />
         </header>
         <main>
-
+            <h1>
+                KCVC
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. Aliquam vulputate ultrices mi a bibendum. 
+            </p>
+            <p>
+                Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar neque tristique quis. Mauris ut urna tristique, iaculis libero in, ultrices tellus.
+            </p>
         </main>
 
     </div>
