@@ -7,6 +7,7 @@
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
 
+
     <style>
         body {
             background: grey; /*So we can see the wrapper*/
@@ -48,10 +49,11 @@
             z-index: 2;
         }
         header{ /*This is the div that contains the nav and header imgs*/
-            height: 600px;
+            height: 500px;
             width: 940px;
             margin: 0 auto;
             position: relative; /*Everything that is position absolute uses this as a parent*/
+            margin-bottom: 20px;
         }
         .logo-lower { /*This is th logo at the bottom of the big header img*/
             position: absolute;
@@ -81,10 +83,70 @@
         main {
             margin-bottom: 20px;
             border-bottom: 1px solid black;
+            height: 220px;
+            background: pink;
+            width: 940px;
+            margin: 0 auto;
         }
         main p {
             margin-bottom: 20px;
         }
+
+        main #pic-placeholder{ 
+            /*this div is only a place holder although some of the stylings may be used for 
+              # the picture afterwards. 
+              # this is the middle box for the top main section 
+            */ 
+            height: 200px;
+            width: 300px;
+            background: white;
+            line-height: 200px;
+            text-align: center;
+            float:left;
+        }
+        main #main-content{ 
+            /*top section has three boxes this is the far right one*/
+            float: right;
+            width:400px;
+            clear: none;
+            margin-right: 20px;
+        }
+        main #sub-nav { 
+            /*this is the far left box (1 of 3 in the top main)*/
+            float: left;
+            margin-right: 20px;
+        }
+
+        html {font-size: 1em;}
+
+        body {
+          font-family: 'Libre Baskerville', serif;
+          font-weight: 400;
+          line-height: 1.45;
+          color: #333;
+        }
+
+        p {margin-bottom: 1.3em;}
+
+        h1, h2, h3, h4 {
+          margin: 1.414em 0 0.5em;
+          font-weight: inherit;
+          line-height: 1.2;
+        }
+
+        h1 {
+          margin-top: 0;
+          font-size: 2.074em;
+        }
+
+        h2 {font-size: 1.728em;}
+
+        h3 {font-size: 1.44em;}
+
+        h4 {font-size: 1.2em;}
+
+        small, .font_small {font-size: 0.833em;}
+
     </style>
 </head>
 <body>
@@ -123,15 +185,47 @@
         <img id="header-img" src="images/header-img.png" />
         </header>
         <main>
-            <h1>
-                KCVC
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. Aliquam vulputate ultrices mi a bibendum. 
-            </p>
-            <p>
-                Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar neque tristique quis. Mauris ut urna tristique, iaculis libero in, ultrices tellus.
-            </p>
+            <div id="sub-nav">
+                <!--for left box in main-->
+                <ul>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        <a href="#">
+                            KCVC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Red Team
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Situation Report
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="pic-placeholder">
+                <!--middle box in the main-->
+                <h3>
+                    photo
+                </h3>
+            </div>
+            <div id="main-content">
+                <!--this is the far right box in main-->
+                <h1>
+                    KCVC
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. 
+                </p>
+                <p>
+                    Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar neque tristique quis.
+                </p>
+            </div>
         </main>
 
     </div>
