@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<title>kcvc</title>
+
+<!-- css-->
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"/>  -->
+     <style>
+          body {
+            background: grey; /*So we can see the wrapper*/
+        }
+        #wrapper{
+            margin: 20px auto;
+            width: 980px;
+        }
+          /*++++++++ Header CSS Starts ++++++++ */
+        #header-img{ /*this is the big image and it's sitting under all the other items*/
+            z-index:-1; /*this is what makes it under all the other items*/
+            position:absolute;
+            left:0;
+            top: 0;
+        }
+        header ul{ /* centers and restricts the nav to 50% of the contiaining div */
+            margin: 0 auto;
+            list-style-type: none;
+            width: 50%;
+        }
+        header ul li { /*Makes the navigation horizontal*/
+            float: left;
+            text-align: center;
+            width: 25%;
+            height: 100px;
+            line-height: 100px;
+        }
+        header ul li a{
+            text-decoration: none
+        }
+        header ul li a:hover { /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
+            background: black;
+            display:block;
+        }
+        #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
+            height: 100px;
+            border-bottom: 1px solid black; 
+            width: 940px;
+            z-index: 2;
+        }
+        header{ /*This is the div that contains the nav and header imgs*/
+            height: 600px;
+            width: 940px;
+            margin: 0 auto;
+            position: relative; /*Everything that is position absolute uses this as a parent*/
+        }
+        .logo-lower { /*This is th logo at the bottom of the big header img*/
+            position: absolute;
+            top: 405px;
+            left:400px;
+        }
+        .logo-upper {
+            position:absolute;
+            left: 20px;
+            top: 12px;
+        }
+        #header-social{ /*this is a div that contains the social media links*/
+            height: 100px;
+            width: 25%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+        }
+        #header-social i { /*This is the LinkedIN and Facebook font Awesome*/
+            font-size: 4em;
+            line-height: 100px;
+            margin-right: 15px;
+        }
+                /*++++++++  Header CSS ENDS  ++++++++ */
+         main{
+             width:50%;
+             float: left;
+             padding:20px;
+            
+         }
+         aside{
+             width:45%;
+             float:right;
+         }
+         h1{
+             text-align:center;
+         }
+         img{
+             display:block;
+             margin:0 auto;
+         }
+         p{
+             padding:20px;
+         }
+         button{
+             display:block;
+             margin:0 auto;
+         }
+        
+         .top{
+             width:100%;
+             height:150px;
+             position: relative;
+             
+         }
+        
+         .left{
+             width:45%;
+             float:left;
+           
+         }
+        
+         .right{
+             width:45%;
+             float:right;
+         }
+         .splogo{
+             float:left;
+             padding-right:20px;
+             padding-left:10px;
+             padding-bottom:5px;
+             display:block;
+         }
+         #search{
+             float:right;
+             height:40px;
+             width:200px;
+             position: absolute;
+             right: 20px;
+             top: 20px;
+         }
+        #search h2 {
+            float:left;
+            margin: 0 10px 0 0;
+        }
+        #search select {
+            float: left;
+            margin: 2px 0 0 5px;
+        }
+         
+     </style>
+    </head>
+<body>
+    <div id="wrapper">
+     <header>
+            <div id="header-nav">
+                <img class="logo-upper" src="images/logo-smaller.png" />
+                <ul>
+                    <li>
+                        <a href="">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Resources
+                        </a>
+                    </li>
+                </ul>
+                <div id="header-social">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <img class="logo-lower" src="images/logo-smaller.png" />
+        <img id="header-img" src="images/header-img.png" />
+        </header>
+        
+        <div class="top">
+         <h2><strong>Resources</strong></h2>
+        <h2>Service<br>Providers</h2>
+        <div id="search">
+                    
+                      <h2>Search</h2>
+<select>
+    
+  <option value="housing">Housing</option>
+  <option value="healthcare">Healthcare</option>
+  <option value="food">Food</option>
+  <option value="other">Other</option>
+</select> 
+          </div> 
+        </div>
+        <div class="left">
+    
+            <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+            
+             <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+            
+             <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+             </div>
+ 
+             
+            <div class="right">
+          
+             <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+             <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+             <img class="splogo" src="  
+http://fpoimg.com/150x200?text=service provider logo image&text_color=191515
+ " width="150" height="200" />
+            <p>
+                Lorem ipsum dolor sit amet, ligula lacus, semper proin. Curabitur in, ac aliquet et voluptas, nec vitae vestibulum ut eget quis donec. Pellentesque dictum sit odio, magnis dui, vel convallis nunc, nibh donec lorem mauris class. In at sodales aliquam ac, est justo. Ipsum suspendisse facilisi
+            </p>
+            </div>
+   
+  </div>  
+</body>
+</html>
