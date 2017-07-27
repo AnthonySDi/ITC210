@@ -10,7 +10,11 @@
 
     <style>
         body {
-            background: grey; /*So we can see the wrapper*/
+            background: white; /*So we can see the wrapper*/
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            line-height: 1.45;
+            color: #333;
         }
         #wrapper{
             margin: 20px auto;
@@ -80,13 +84,23 @@
         }
                 /*++++++++  Header CSS ENDS  ++++++++ */
 
+                /*++++++++  the first box of Main CSS Begins  +++++++++*/
         main {
+            /*
+                this section controls all CSS main
+            */
             margin-bottom: 20px;
-            border-bottom: 1px solid black;
-            height: 220px;
-            background: pink;
+            background: white;
             width: 940px;
             margin: 0 auto;
+        }
+        #top-box{
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            height: 250px;
+        }
+        #top-box h1 {
+            text-align: center;
         }
         main p {
             margin-bottom: 20px;
@@ -96,13 +110,15 @@
             /*this div is only a place holder although some of the stylings may be used for 
               # the picture afterwards. 
               # this is the middle box for the top main section 
+              # ++ This also controls the place holder in #bottom-box
             */ 
-            height: 200px;
+            height: 230px;
             width: 300px;
             background: white;
-            line-height: 200px;
+            line-height: 230px;
             text-align: center;
             float:left;
+            border: 1px solid black;
         }
         main #main-content{ 
             /*top section has three boxes this is the far right one*/
@@ -117,14 +133,59 @@
             margin-right: 20px;
         }
 
-        html {font-size: 1em;}
-
-        body {
-          font-family: 'Libre Baskerville', serif;
-          font-weight: 400;
-          line-height: 1.45;
-          color: #333;
+        main #sub-nav ul li a{
+            text-decoration: none;
+            color:grey
         }
+        main #sub-nav ul li h3 {
+            margin: 0 0 10px 0;
+        }
+                /*++++++++  END of first box of the Main  +++++++++*/
+
+
+                /*++++++++  Start of second box the main  ++++++++*/
+
+        /*There is a Main css that controls all css for any main 
+            it can be found in the above section for Main CSS
+        */
+         #second-box {
+            width: 940px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+        }
+        #second-box #container {
+            margin: 0 auto;
+            width: 840px;
+            text-align: center;
+        }
+
+                /*++++++++  End of Second box of the main  ++++++++*/
+
+                /*++++++++  End of Third box of the main  ++++++++*/
+        #bottom-box {
+            width: 940px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            height: 270px;
+        }
+        #bottom-box #container{
+            margin: 0 auto;
+            width: 800px;
+            clear: both;
+        }
+        #bottom-box #container #roll-call{
+            float: right;
+            width: 475px;
+        }
+        #bottom-box #container #roll-call h1{
+            text-align: center;
+        }
+
+                /*++++++++  End of Third box of the main  ++++++++*/
+
+
+        /*temporary Typography scaling to further reflect the wireframes. */ 
+        html {font-size: 1em;}
 
         p {margin-bottom: 1.3em;}
 
@@ -146,7 +207,58 @@
         h4 {font-size: 1.2em;}
 
         small, .font_small {font-size: 0.833em;}
+                /* ++++++++ END of temporary Typography ++++++++*/
 
+                /* ++++++++  Start of Footer CSS  ++++++++ */
+        footer {
+            width: 940px;
+            margin: 0 auto 25px auto;
+            height: 120px;
+            position: relative;
+        }
+
+        #footer-social{
+            /*this is a div that contains the social media links*/
+            height: 100px;
+            width: 150px;
+            float: left;
+            text-align: center;
+            margin:10px 0 auto 85px;
+        }
+        #footer-social i { /*This is the LinkedIN and Facebook font Awesome*/
+            font-size: 4em;
+            line-height: 100px;
+            margin-right: 15px;
+        }
+        
+        footer form {
+            height: 75px;
+            width: 600px;
+            background: white;
+            float: right;
+            border: 1px solid black;
+            margin-right: 50px;
+            
+        }
+        footer form [type=email]{
+            width: 400px;
+            border: 1px solid black;
+            margin: 15px;
+            height: 40px;
+        }
+        #footer-form{
+            float:right;
+            height: 150px;
+            width: 650px;
+        }
+        #footer-form p {
+            margin: 0;
+        }
+        footer form button {
+            width: 150px;
+            height: 40px;
+        }
+            /* ++++++++  End of Footer CSS  ++++++++ */
     </style>
 </head>
 <body>
@@ -185,49 +297,107 @@
         <img id="header-img" src="images/header-img.png" />
         </header>
         <main>
-            <div id="sub-nav">
-                <!--for left box in main-->
-                <ul>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        <a href="#">
-                            KCVC
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Red Team
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Situation Report
-                        </a>
-                    </li>
-                </ul>
+            <div id="top-box">
+                <div id="sub-nav">
+                    <!--for left box in main-->
+                    <ul>
+                        <li>
+                            <h3>
+                                About
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#">
+                                    KCVC
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#">
+                                    Red Team
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#">
+                                    Situation Report
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pic-placeholder">
+                    <!--middle box in the main-->
+                    <p>
+                        photo
+                    </p>
+                </div>
+                <div id="main-content">
+                    <!--this is the far right box in main-->
+                    <h1>
+                        KCVC
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. 
+                    </p>
+                    <p>
+                        Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet. Praesent mattis posuere dolor, non pulvinar tristique quis.
+                    </p>
+                </div>
             </div>
-            <div id="pic-placeholder">
-                <!--middle box in the main-->
-                <h3>
-                    photo
-                </h3>
+            <div id="second-box">
+                <!--second main box-->
+                <div id="container">
+                    <h1>
+                        Who We Are
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar tristique quis.
+                    </p>
+                </div>
             </div>
-            <div id="main-content">
-                <!--this is the far right box in main-->
-                <h1>
-                    KCVC
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. 
-                </p>
-                <p>
-                    Cras felis nulla, varius eget dictum vitae, congue vel elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar neque tristique quis.
-                </p>
+            <div id="bottom-box">
+                <div id="container">
+                    <div id="pic-placeholder">
+                        <!--css is in the section for the top box-->
+                        <p>
+                            photo
+                        </p>
+                    </div>
+                    <div id="roll-call">
+                        <h1>
+                            Our All-County Roll Call 
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lectus, luctus vel tristique ac, commodo ac magna. Aliquam nunc quam, tempor a porta ac, tincidunt nec arcu. Cras felis nulla, varius eget dictum vitae, congue vel elit. 
+                       </p>
+                       <p>     
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere dolor, non pulvinar tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis posuere     dolor, non pulvinar tristique quis.
+                        </p>
+                    </div>
+                </div>
             </div>
         </main>
-
+        <footer>
+            <div id="footer-social">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </div>
+            <div id="footer-form">
+                <p>
+                    SIGN UP FO THE MUSTER REPORT
+                </p>
+                <form>
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="submit">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
