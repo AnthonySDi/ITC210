@@ -6,7 +6,7 @@
             </div>
             <div id="footer-form">
                 <p>
-                    SIGN UP FO THE MUSTER REPORT
+                    SIGN UP FOR THE MUSTER REPORT
                 </p>
                 <form>
                     <input type="email" placeholder="EMAIL ADDRESS" />
@@ -22,5 +22,10 @@
         <?PHP wp_footer(); ?>   
         <!--die wp footer die! NOTE: THis is not a die statement for PHP-->
     </div>
+    <!--footer ends here-->
+
+<!--wp footer -->
+    <?php wp_footer(); ?>
+<!--end wp footer-->
 </body>
 </html>
