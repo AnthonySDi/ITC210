@@ -1,4 +1,4 @@
-        <!--footer starts here-->
+<!--footer starts here-->        
         <footer>
             <div id="footer-social">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -15,7 +15,12 @@
                     </button>
                 </form>
             </div>
+
         </footer>
+
+            <!--wp footer function start-->
+        <?PHP wp_footer(); ?>   
+        <!--die wp footer die! NOTE: THis is not a die statement for PHP-->
     </div>
 </body>
 </html>
