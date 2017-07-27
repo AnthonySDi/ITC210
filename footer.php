@@ -6,7 +6,7 @@
             </div>
             <div id="footer-form">
                 <p>
-                    SIGN UP FO THE MUSTER REPORT
+                    SIGN UP FOR THE MUSTER REPORT
                 </p>
                 <form>
                     <input type="email" placeholder="EMAIL ADDRESS" />
