@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -7,259 +6,6 @@
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
 
-
-    <style>
-        body {
-            background: white; /*So we can see the wrapper*/
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            line-height: 1.45;
-            color: #333;
-        }
-        #wrapper{
-            margin: 20px auto;
-            width: 980px;
-        }
-        /*++++++++ Header CSS Starts ++++++++ */
-        #header-img{ /*this is the big image and it's sitting under all the other items*/
-            z-index:-1; /*this is what makes it under all the other items*/
-            position:absolute;
-            left:0;
-            top: 0;
-        }
-        header ul{ /* centers and restricts the nav to 50% of the contiaining div */
-            margin: 0 auto;
-            list-style-type: none;
-            width: 50%;
-        }
-        header ul li { /*Makes the navigation horizontal*/
-            float: left;
-            text-align: center;
-            width: 25%;
-            height: 100px;
-            line-height: 100px;
-        }
-        header ul li a{
-            text-decoration: none
-        }
-        header ul li a:hover { /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
-            background: black;
-            display:block;
-        }
-        #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
-            height: 100px;
-            border-bottom: 1px solid black; 
-            width: 940px;
-            z-index: 2;
-        }
-        header{ /*This is the div that contains the nav and header imgs*/
-            height: 500px;
-            width: 940px;
-            margin: 0 auto;
-            position: relative; /*Everything that is position absolute uses this as a parent*/
-            margin-bottom: 20px;
-        }
-        .logo-lower { /*This is th logo at the bottom of the big header img*/
-            position: absolute;
-            top: 405px;
-            left:400px;
-        }
-        .logo-upper {
-            position:absolute;
-            left: 20px;
-            top: 12px;
-        }
-        #header-social{ /*this is a div that contains the social media links*/
-            height: 100px;
-            width: 25%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            text-align: center;
-        }
-        #header-social i { /*This is the LinkedIN and Facebook font Awesome*/
-            font-size: 4em;
-            line-height: 100px;
-            margin-right: 15px;
-        }
-                /*++++++++  Header CSS ENDS  ++++++++ */
-
-                /*++++++++  the first box of Main CSS Begins  +++++++++*/
-        main {
-            /*
-                this section controls all CSS main
-            */
-            margin-bottom: 20px;
-            background: white;
-            width: 940px;
-            margin: 0 auto;
-        }
-        #top-box{
-            border-bottom: 1px solid black;
-            margin-bottom: 20px;
-            height: 250px;
-        }
-        #top-box h1 {
-            text-align: center;
-        }
-        main p {
-            margin-bottom: 20px;
-        }
-
-        main #pic-placeholder{ 
-            /*this div is only a place holder although some of the stylings may be used for 
-              # the picture afterwards. 
-              # this is the middle box for the top main section 
-              # ++ This also controls the place holder in #bottom-box
-            */ 
-            height: 230px;
-            width: 300px;
-            background: white;
-            line-height: 230px;
-            text-align: center;
-            float:left;
-            border: 1px solid black;
-        }
-        main #main-content{ 
-            /*top section has three boxes this is the far right one*/
-            float: right;
-            width:400px;
-            clear: none;
-            margin-right: 20px;
-        }
-        main #sub-nav { 
-            /*this is the far left box (1 of 3 in the top main)*/
-            float: left;
-            margin-right: 20px;
-        }
-
-        main #sub-nav ul li a{
-            text-decoration: none;
-            color:grey
-        }
-        main #sub-nav ul li h3 {
-            margin: 0 0 10px 0;
-        }
-                /*++++++++  END of first box of the Main  +++++++++*/
-
-
-                /*++++++++  Start of second box the main  ++++++++*/
-
-        /*There is a Main css that controls all css for any main 
-            it can be found in the above section for Main CSS
-        */
-         #second-box {
-            width: 940px;
-            border-bottom: 1px solid black;
-            margin-bottom: 20px;
-        }
-        #second-box #container {
-            margin: 0 auto;
-            width: 840px;
-            text-align: center;
-        }
-
-                /*++++++++  End of Second box of the main  ++++++++*/
-
-                /*++++++++  End of Third box of the main  ++++++++*/
-        #bottom-box {
-            width: 940px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            height: 270px;
-        }
-        #bottom-box #container{
-            margin: 0 auto;
-            width: 800px;
-            clear: both;
-        }
-        #bottom-box #container #roll-call{
-            float: right;
-            width: 475px;
-        }
-        #bottom-box #container #roll-call h1{
-            text-align: center;
-        }
-
-                /*++++++++  End of Third box of the main  ++++++++*/
-
-
-        /*temporary Typography scaling to further reflect the wireframes. */ 
-        html {font-size: 1em;}
-
-        p {margin-bottom: 1.3em;}
-
-        h1, h2, h3, h4 {
-          margin: 1.414em 0 0.5em;
-          font-weight: inherit;
-          line-height: 1.2;
-        }
-
-        h1 {
-          margin-top: 0;
-          font-size: 2.074em;
-        }
-
-        h2 {font-size: 1.728em;}
-
-        h3 {font-size: 1.44em;}
-
-        h4 {font-size: 1.2em;}
-
-        small, .font_small {font-size: 0.833em;}
-                /* ++++++++ END of temporary Typography ++++++++*/
-
-                /* ++++++++  Start of Footer CSS  ++++++++ */
-        footer {
-            width: 940px;
-            margin: 0 auto 25px auto;
-            height: 120px;
-            position: relative;
-        }
-
-        #footer-social{
-            /*this is a div that contains the social media links*/
-            height: 100px;
-            width: 150px;
-            float: left;
-            text-align: center;
-            margin:10px 0 auto 85px;
-        }
-        #footer-social i { /*This is the LinkedIN and Facebook font Awesome*/
-            font-size: 4em;
-            line-height: 100px;
-            margin-right: 15px;
-        }
-        
-        footer form {
-            height: 75px;
-            width: 600px;
-            background: white;
-            float: right;
-            border: 1px solid black;
-            margin-right: 50px;
-            
-        }
-        footer form [type=email]{
-            width: 400px;
-            border: 1px solid black;
-            margin: 15px;
-            height: 40px;
-        }
-        #footer-form{
-            float:right;
-            height: 150px;
-            width: 650px;
-        }
-        #footer-form p {
-            margin: 0;
-        }
-        footer form button {
-            width: 150px;
-            height: 40px;
-        }
-            /* ++++++++  End of Footer CSS  ++++++++ */
-    </style>
 </head>
 <body>
     <div id="wrapper">
@@ -296,6 +42,9 @@
             <img class="logo-lower" src="images/logo-smaller.png" />
         <img id="header-img" src="images/header-img.png" />
         </header>
+        <!--The header ends here-->
+
+        <!--the body starts here-->
         <main>
             <div id="top-box">
                 <div id="sub-nav">
@@ -381,6 +130,9 @@
                 </div>
             </div>
         </main>
+        <!--body or main section of the site ends here-->
+
+        <!--footer starts here-->
         <footer>
             <div id="footer-social">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
