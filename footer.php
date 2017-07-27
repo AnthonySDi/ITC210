@@ -17,5 +17,10 @@
             </div>
         </footer>
     </div>
+    <!--footer ends here-->
+
+<!--wp footer -->
+    <?php wp_footer(); ?>
+<!--end wp footer-->
 </body>
 </html>
