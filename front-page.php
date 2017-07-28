@@ -4,7 +4,7 @@ get_header();
 <!--This is where Front-page.php middle starts-->
 
 <!--start protosite content-->
-    <main>
+    <div id="main">
         <h1>Our Mission</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas, turpis interdum tempus porta, mauris ipsum rutrum metus, id tincidunt dui enim sed ante. Curabitur cursus purus non nisl posuere, ut faucibus quam posuere. Etiam a ultricies turpis. Lorem ipsum dolor sit amet,
@@ -17,9 +17,9 @@ get_header();
 http://fpoimg.com/400x300?text=Photo&bg_color=e4d7d7
  " width="400" height="300" />
  
-    </main>
+    </div>
     <!-- this will come from the calendar-->
-    <aside>
+    <div id="aside">
         <h1>Event 1</h1>
         <p>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque fringilla ipsum vel quam venenatis dignissim. Orci varius natoque penatibus et magnis dis parturient montes,    nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
@@ -37,7 +37,7 @@ http://fpoimg.com/400x300?text=Photo&bg_color=e4d7d7
 http://fpoimg.com/400x50?text=Button(Load More)&bg_color=b9b1b1&text_color=260303
  " width="400" height="50" />
  </button> 
-    </aside>
+    </div>
 <!--end of stuff that will come from the calendar-->
   </div>  
 <!--end protosite content-->

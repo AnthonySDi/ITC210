@@ -46,7 +46,7 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu li {
     /*Makes the navigation horizontal*/
     float: left;
     text-align: center;
-    width: 20%;
+    width: 25%;
 }
 header #header-nav .menu-mainmenu-container #menu-mainmenu li a:hover {
     background: black;
@@ -87,7 +87,7 @@ header{ /*This is the div that contains the nav and header imgs*/
     width: 940px;
     margin: 0 auto;
     position: relative; /*Everything that is position absolute uses this as a parent*/
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .logo-lower { /*This is th logo at the bottom of the big header img*/
     position: absolute;
@@ -117,7 +117,8 @@ header{ /*This is the div that contains the nav and header imgs*/
         /*++++++++  the first box of Main CSS Begins  +++++++++*/
 main {
     /*
-        this section controls all CSS main
+        this section controls all CSS div main
+        there was clashing with Kerstin's CSS and mine. 
     */
     margin-bottom: 20px;
     background: white;
@@ -127,7 +128,10 @@ main {
 #top-box{
     border-bottom: 1px solid black;
     margin-bottom: 20px;
-    height: 250px;
+    height: 275px;
+}
+#top-box h3 {
+    margin: 0;
 }
 #top-box h1 {
     text-align: center;
@@ -149,7 +153,9 @@ main #pic-placeholder{
     text-align: center;
     float:left;
     border: 1px solid black;
+    margin: 20px 10px auto 20px;    
 }
+
 main #main-content{ 
     /*top section has three boxes this is the far right one*/
     float: right;
@@ -205,12 +211,21 @@ main #sub-nav ul li h3 {
 }
 #bottom-box #container #roll-call{
     float: right;
-    width: 475px;
+    width: 460px;
 }
 #bottom-box #container #roll-call h1{
     text-align: center;
 }
-
+#rc-pic-placeholder {
+    height: 230px;
+    width: 300px;
+    background: white;
+    line-height: 230px;
+    text-align: center;
+    float:left;
+    border: 1px solid black;
+    margin: 35px 5px auto 10px;
+}
         /*++++++++  End of Third box of the main  ++++++++*/
 
 
@@ -245,6 +260,7 @@ footer {
     margin: 0 auto 25px auto;
     height: 120px;
     position: relative;
+    clear: both;
 }
 
 #footer-social{
@@ -292,70 +308,73 @@ footer form button {
     display:inline;
 }
     /* ++++++++  End of Footer CSS  ++++++++ */
-      main{
-             width:50%;
-             float: left;
-             padding:20px;
-             margin-bottom: 20px
-            
-         }
-         aside{
-             width:45%;
-             float:right;
-             margin-bottom: 20px;
-         }
-         h1{
-             text-align:center;
-         }
-         img{
-             display:block;
-             margin:0 auto;
-         }
-         p{
-             padding:20px;
-         }
-         button{
-             display:block;
-             margin:0 auto;
-         }
-           .top{
-             width:100%;
-             height:150px;
-             position: relative;
-             
-         }
-        
-         .left{
-             width:45%;
-             float:left;
-           
-         }
-        
-         .right{
-             width:45%;
-             float:right;
-         }
-         .splogo{
-             float:left;
-             padding-right:20px;
-             padding-left:10px;
-             padding-bottom:5px;
-             display:block;
-         }
-         #search{
-             float:right;
-             height:40px;
-             width:200px;
-             position: absolute;
-             right: 20px;
-             top: 20px;
-         }
-        #search h2 {
-            float:left;
-            margin: 0 10px 0 0;
-        }
-        #search select {
-            float: left;
-            margin: 2px 0 0 5px;
-        }
+        /*FORMER css called   width:50%;  float: left;   padding:20px;  margin-bottom: 20px*/
+   /*Couldn't resolve conflicts on between my css and kerstins for main. 
+              this was to affect service providers page. will need to be changeds
+          */ 
+#main {
+    width:50%;  
+    float: left;   
+    padding:20px;  
+    margin-bottom: 20px
+}
+  
+#aside{
+    width:45%;
+    float:right;
+    margin-bottom: 20px;
+}
+
+img{
+    display:block;
+    margin:0 auto;
+}
          
+button{
+    display:block;
+    margin:0 auto;
+}
+.top{
+    width:100%;
+    height:150px;
+    position: relative;
+             
+}
+        
+.top h2 a{
+    text-decoration: none;
+    color:grey
+}
+.left{
+    width:45%;
+    float:left;
+           
+}
+        
+.right{
+    width:45%;
+    float:right;
+}
+.splogo{
+    float:left;
+    padding-right:20px;
+    padding-left:10px;
+    padding-bottom:5px;
+    display:block;
+}
+#search{
+    float:right;
+    height:40px;
+    width:200px;
+    position: absolute;
+    right: 140px;
+    top: 20px;
+}
+#search h2 {
+float:left;
+margin: 0 10px 0 0;
+}
+#search select {
+float: left;
+margin: 7px 0 0 5px;
+}
