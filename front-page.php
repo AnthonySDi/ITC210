@@ -1,23 +1,8 @@
-<<<<<<< HEAD
 <?php
 get_header();
 ?>
 <!--This is where Front-page.php middle starts-->
 
-
-
-
-
-
-    <small>
-        front-page.php
-    </small>
-<!--This is where Front-page.php middle +++ ENDS ++++ -->
-<?php
-get_footer();
-?>
-=======
-<?php get_header(); ?>
 <!--start protosite content-->
     <main>
         <h1>Our Mission</h1>
@@ -56,5 +41,14 @@ http://fpoimg.com/400x50?text=Button(Load More)&bg_color=b9b1b1&text_color=26030
 <!--end of stuff that will come from the calendar-->
   </div>  
 <!--end protosite content-->
-<?php get_footer(); ?>
->>>>>>> origin/master
+
+
+
+
+    <small>
+        front-page.php
+    </small>
+<!--This is where Front-page.php middle +++ ENDS ++++ -->
+<?php
+get_footer();
+?>

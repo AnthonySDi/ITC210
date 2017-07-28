@@ -10,7 +10,7 @@ get_header();
 
 
 <small>
-    post.php
+    page.php
 </small>
 
 <!--This is where page.php middle +++ ENDS +++-->

@@ -25,31 +25,63 @@ body {
     left:0;
     top: 0;
 }
-header ul{ /* centers and restricts the nav to 50% of the contiaining div */
-    margin: 0 auto;
-    list-style-type: none;
-    width: 50%;
-}
-header ul li { /*Makes the navigation horizontal*/
-    float: left;
-    text-align: center;
-    width: 25%;
-    height: 100px;
-    line-height: 100px;
-}
-header ul li a{
-    text-decoration: none
-}
-header ul li a:hover { /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
-    background: black;
-    display:block;
-}
+
 #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
     height: 100px;
     border-bottom: 1px solid black; 
     width: 940px;
     z-index: 2;
 }
+
+header #header-nav .menu-mainmenu-container #menu-mainmenu { 
+    /* centers and restricts the nav to 50% of the contiaining div */
+    margin: 0 auto;
+    list-style-type: none;
+    width: 50%;
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+}
+header #header-nav .menu-mainmenu-container #menu-mainmenu li { 
+    /*Makes the navigation horizontal*/
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+header #header-nav .menu-mainmenu-container #menu-mainmenu li a:hover {
+    background: black;
+    color:white;
+    display: block;
+}
+ul.sub-menu{
+    /*This hides the dropdown portions until the hover*/
+    display: none; 
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+header ul li:hover ul.sub-menu { 
+    /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
+    display:block;
+    color: white;
+    position:absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+header ul li ul.sub-menu li {
+    width: 200px;
+    margin-bottom:0px;
+    clear: both;
+}
+header ul li ul.sub-menu li a:hover{
+    background: black;
+    color: white;
+    display: block;
+}
+
 header{ /*This is the div that contains the nav and header imgs*/
     height: 500px;
     width: 940px;
@@ -226,7 +258,7 @@ footer {
 #footer-social i { /*This is the LinkedIN and Facebook font Awesome*/
     font-size: 4em;
     line-height: 100px;
-    margin-right: 15px;
+    margin: 0 15px 0 0; /*had to move them around when I put them into wordpress*/
 }
         
 footer form {
@@ -251,21 +283,26 @@ footer form [type=email]{
 }
 #footer-form p {
     margin: 0;
+    padding: 0;
 }
 footer form button {
     width: 150px;
     height: 40px;
+    margin: 0;
+    display:inline;
 }
     /* ++++++++  End of Footer CSS  ++++++++ */
       main{
              width:50%;
              float: left;
              padding:20px;
+             margin-bottom: 20px
             
          }
          aside{
              width:45%;
              float:right;
+             margin-bottom: 20px;
          }
          h1{
              text-align:center;
