@@ -2,7 +2,6 @@
 get_header();
 ?>
 <!--This is where Front-page.php middle starts-->
-
 <!--start protosite content-->
     <div id="main">
         <h1>Our Mission</h1>
@@ -41,6 +40,7 @@ http://fpoimg.com/400x50?text=Button(Load More)&bg_color=b9b1b1&text_color=26030
 <!--end of stuff that will come from the calendar-->
   </div>  
 <!--end protosite content-->
+
 
 
 

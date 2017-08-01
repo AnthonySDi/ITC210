@@ -11,9 +11,6 @@ get_header();
                         <?php the_content(); ?>
                     </main>
             <?php endwhile; endif;?>
-        
-
-
 
 
 <small>
