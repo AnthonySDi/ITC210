@@ -23,9 +23,5 @@
         <!--die wp footer die! NOTE: THis is not a die statement for PHP-->
     </div>
     <!--footer ends here-->
-
-<!--wp footer -->
-    <?php wp_footer(); ?>
-<!--end wp footer-->
 </body>
 </html>
