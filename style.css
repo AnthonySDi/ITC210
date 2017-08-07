@@ -297,9 +297,8 @@ footer {
 footer form {
     height: 75px;
     width: 600px;
-    background: white;
+    background: #003B49;
     float: right;
-    border: 1px solid black;
     margin-right: 50px;
             
 }
