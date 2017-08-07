@@ -280,7 +280,7 @@ footer {
     clear: both;
 }
 
-#footer-social{
+#footer-social {
     /*this is a div that contains the social media links*/
     height: 100px;
     width: 150px;
@@ -303,13 +303,13 @@ footer form {
     margin-right: 50px;
             
 }
-footer form [type=email]{
-    width: 400px;
+footer form [type=email] {
+    width: 400px; 
     border: 1px solid black;
     margin: 15px;
     height: 40px;
 }
-#footer-form{
+#footer-form {
     float:right;
     height: 150px;
     width: 650px;
