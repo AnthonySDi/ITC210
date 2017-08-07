@@ -13,7 +13,7 @@
     <div id="wrapper">
         <header>
             <div id="header-nav">
-                <a href="<?php echo home_url(); ?>" title="click here for home page"><img class="logo-upper" src="<?php bloginfo('template_directory'); ?>/images/logo-smaller.png" /></a>
+                <a href="<?php echo home_url(); ?>" title="click here for home page"><img class="logo-upper" src="<?php bloginfo('template_directory'); ?>/images/kcvc_logo_color.svg" /></a>
     <!--++++ Start of WordPress Nav ++++-->
         <?PHP wp_nav_menu(); ?>
     <!--++++ End of WordPress Nav ++++-->
