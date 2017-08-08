@@ -146,8 +146,9 @@ main {
     margin: 0 auto;
 }
 #top-box{
-    border-bottom: 2px solid #003B49; /*dark green*/
+    border-bottom: 1px solid #003B49; /*dark green*/
     margin-bottom: 20px;
+    padding-bottom: 20px;
     height: 275px;
 }
 #top-box h3 {
@@ -192,6 +193,10 @@ main #sub-nav {
 main #sub-nav ul li a{
     text-decoration: none;
     color:grey
+}
+main #sub-nav ul li a:hover {
+    text-decoration: none;
+    color:#003B49; /*dark green*/
 }
 main #sub-nav ul li h3 {
     margin: 0 0 10px 0;
@@ -283,7 +288,7 @@ footer {
     clear: both;
 }
 
-#footer-social {
+#footer-social{
     /*this is a div that contains the social media links*/
     height: 100px;
     width: 150px;
@@ -300,20 +305,21 @@ footer {
 footer form {
     height: 75px;
     width: 600px;
-    background: #003B49;
+    background: white;
     float: right;
+    border: 1px solid black;
     margin-right: 50px;
     border-radius: 12px;
             
 }
-footer form [type=email] {
-    width: 400px; 
+footer form [type=email]{
+    width: 400px;
     border: 1px solid black;
     margin: 15px;
     height: 40px;
     border-radius: 15px;
 }
-#footer-form {
+#footer-form{
     float:right;
     height: 150px;
     width: 650px;
