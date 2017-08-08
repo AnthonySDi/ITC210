@@ -3,7 +3,8 @@
     <title><?php get_title_tag(); ?></title>
     <link href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
-    <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
+    <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
 <!--wp head function start-->
  <?PHP wp_head(); ?>
@@ -17,12 +18,11 @@
     <!--++++ Start of WordPress Nav ++++-->
         <?PHP wp_nav_menu(); ?>
     <!--++++ End of WordPress Nav ++++-->
-                <div id="header-social">
+           <!--      <div id="header-social">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                </div>
+                </div> -->
             </div>
-            <img class="logo-lower" src="<?php bloginfo('template_directory'); ?>/images/logo-smaller.png" />
-        <img id="header-img" src="<?php bloginfo('template_directory'); ?>/images/header-img.png" />
+        <img id="header-img" src="<?php bloginfo('template_directory'); ?>/images/kcvchero.jpg" />
         </header>
         <!--header ends here-->
