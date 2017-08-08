@@ -306,27 +306,29 @@ footer {
 }
         
 footer form {
-    height: 75px;
+    height: 50px;
     width: 600px;
-    background: white;
+    background: #003B49;
     float: right;
-    border: 1px solid black;
     margin-right: 50px;
-    border-radius: 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
             
 }
 footer form [type=email]{
     width: 400px;
-    border: 1px solid black;
-    margin: 15px;
-    height: 40px;
-    border-radius: 15px;
+    margin: 9px;
+    height: 30px;
+    border-radius: 7px;
+    box-sizing:border-box;
 }
 #footer-form{
     float:right;
-    height: 150px;
+    height: 100px;
     width: 650px;
-    border-radius: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 12px;
 }
 #footer-form p {
     margin: 0;
@@ -334,14 +336,16 @@ footer form [type=email]{
 }
 footer form button {
     width: 150px;
-    height: 40px;
+    height: 30px;
     margin: 0;
     display:inline;
-    border-radius: 10px;
+    border-radius: 7px;
     font-family: lato;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
-    
+    position: relative; 
+    top: 3px;
+    background: white;
 }
     /* ++++++++  End of Footer CSS  ++++++++ */
         /*FORMER css called   width:50%;  float: left;   padding:20px;  margin-bottom: 20px*/
