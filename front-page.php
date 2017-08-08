@@ -18,7 +18,7 @@ http://fpoimg.com/400x300?text=Photo&bg_color=e4d7d7
  
     </div>
     <!-- this will come from the calendar-->
-    <div id="aside">
+    <div id="aside" class='eventcontainer'>
         <h1>Event 1</h1>
         <p>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque fringilla ipsum vel quam venenatis dignissim. Orci varius natoque penatibus et magnis dis parturient montes,    nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos

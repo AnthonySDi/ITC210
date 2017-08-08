@@ -361,6 +361,15 @@ footer form button {
     width:45%;
     float:right;
     margin-bottom: 20px;
+    background-color: #003B49;
+    color: white;
+    border-radius: 10px;
+}
+
+.eventcontainer h1{
+    color: white !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img{
@@ -371,6 +380,7 @@ img{
 button{
     display:block;
     margin:0 auto;
+    margin-bottom: 5px;
 }
 .top{
     width:100%;
