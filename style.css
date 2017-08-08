@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
 }
 
 #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
-    height: 100px;
+    height: 70px;
     width: 940px;
     z-index: 2;
     background: rgba(165,169,170,.65);
@@ -47,7 +47,7 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
     width: 50%;
     position: relative;
     height: 100px;
-    line-height: 100px;
+    line-height: 70px;
 }
 header #header-nav .menu-mainmenu-container #menu-mainmenu li { 
     /*Makes the navigation horizontal*/
@@ -121,8 +121,8 @@ header{ /*This is the div that contains the nav and header imgs*/
 .logo-upper {
     position:absolute;
     left: 20px;
-    top: 12px;
-    width: 130px;
+    top: 3px;
+    height: 64px;
 }
 #header-social{ /*this is a div that contains the social media links*/
     height: 100px;
@@ -259,7 +259,7 @@ main #sub-nav ul li h3 {
 .eventbutton {
     float: right;
     clear: both;
-    right: 62px;
+    right: 55px;
     position: relative;
 }
         /*++++++++  End of Third box of the main  ++++++++*/
@@ -327,6 +327,8 @@ footer form [type=email]{
     height: 30px;
     border-radius: 7px;
     box-sizing:border-box;
+    border: none;
+    outline: none;
 }
 #footer-form{
     float:right;
@@ -351,8 +353,10 @@ footer form button {
     font-size: 1em;
     text-align: center;
     position: relative; 
-    top: 3px;
+    top: 2px;
     background: white;
+    outline: none;
+    border: none;
 }
     /* ++++++++  End of Footer CSS  ++++++++ */
         /*FORMER css called   width:50%;  float: left;   padding:20px;  margin-bottom: 20px*/
@@ -360,20 +364,22 @@ footer form button {
               this was to affect service providers page. will need to be changeds
           */ 
 #main {
-    width:50%;  
+    width:66%;  
     float: left;   
     padding:20px;  
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
   
 #aside{
     width:33%;
     float:right;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background-color: #003B49;
     color: white;
     border-radius: 10px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .eventcontainer h1{
