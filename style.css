@@ -256,6 +256,12 @@ main #sub-nav ul li h3 {
     border: 1px solid black;
     margin: 35px 5px auto 10px;
 }
+.eventbutton {
+    float: right;
+    clear: both;
+    right: 62px;
+    position: relative;
+}
         /*++++++++  End of Third box of the main  ++++++++*/
 
 
@@ -333,6 +339,7 @@ footer form [type=email]{
 #footer-form p {
     margin: 0;
     padding: 0;
+    font-weight: 700;
 }
 footer form button {
     width: 150px;
@@ -360,12 +367,13 @@ footer form button {
 }
   
 #aside{
-    width:45%;
+    width:33%;
     float:right;
     margin-bottom: 20px;
     background-color: #003B49;
     color: white;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .eventcontainer h1{
