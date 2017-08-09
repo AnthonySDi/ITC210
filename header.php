@@ -1,6 +1,18 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title><?php get_title_tag(); ?></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Begin Toggle Menu -->     
+    <script type="text/javascript" charset="utf-8">
+    $(window).load(function() { // start function
+    $("#toggle").click(function() { // toggle
+    $("#navigation").toggle(); // display and close navigation
+    });
+    });
+    </script>   
+    <!-- End Toggle Menu -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
@@ -17,6 +29,16 @@
     <!--++++ Start of WordPress Nav ++++-->
         <?PHP wp_nav_menu(); ?>
     <!--++++ End of WordPress Nav ++++-->
+
+    <!--++++ Start of WordPress ++++ MOBILE ++++ Nav ++++-->
+    <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/menu-icon-large.png" width="50" height="50" alt="Toggle Menu">
+</div>
+        <?php wp_nav_menu(array('theme_location' => 'mobilemenu','container' => 'div','container_id' => 'navigation',)); ?>
+    <!--++++ End of WordPress ++++ MOBILE ++++ Nav ++++-->
+
+
+    
+
                 <div id="header-social">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     <i class="fa fa-facebook-square" aria-hidden="true"></i>

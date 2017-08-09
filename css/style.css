@@ -20,6 +20,46 @@ body {
     width: 980px;
 }
 /*++++++++ Header CSS Starts ++++++++ */
+/*+++++++++++++ Bella's amazing nav css ++++++++++*/
+#navigation {
+max-width: 1080px; 
+margin: 0 auto;
+padding: 0 0 20px 0;
+font-size: 1.5em;   
+}
+
+#navigation ul {
+overflow: hidden;
+padding: 10px 0;
+margin: 0; 
+text-align: center;
+}
+
+#navigation ul li {
+list-style: none;
+display: inline;
+margin: 0 20px;
+}
+
+#navigation ul li a {
+color: #000 !important; 
+text-decoration: none; 
+font-size: 1.5em;    
+}
+
+#navigation ul li a:hover {
+color: hotpink !important;
+}
+
+#navigation ul li.current-menu-item a, 
+#navigation ul li.current-menu-parent a {
+color: hotpink !important;
+}
+
+#navigation ul li ul.sub-menu {
+display: none;
+}
+ /*+++++++++++++ End Bella's amazing nav css ++++++++++*/
 #header-img{ /*this is the big image and it's sitting under all the other items*/
     z-index:-1; /*this is what makes it under all the other items*/
     position:absolute;

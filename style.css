@@ -8,29 +8,34 @@ Version: 1.0
 */
 
 body {
-    background: white; /*So we can see the wrapper*/
-    font-family: 'Libre Baskerville', serif;
+    background: rgba(195,198,200,.65); /*So we can see the wrapper*/
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.45;
-    color: #333;
+    color: #003B49; /*dark green*/
+}
+h1, h2, h3, h4 {
+    color: #006068; /*light green*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 #wrapper{
     margin: 20px auto;
     width: 980px;
 }
 /*++++++++ Header CSS Starts ++++++++ */
-#header-img{ /*this is the big image and it's sitting under all the other items*/
-    z-index:-1; /*this is what makes it under all the other items*/
-    position:absolute;
-    left:0;
-    top: 0;
+#toggle,
+#navigation {
+    display: none;
 }
 
 #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
-    height: 100px;
-    border-bottom: 1px solid black; 
+    height: 70px;
     width: 940px;
     z-index: 2;
+    background: rgba(165,169,170,.65);
+    border-bottom: 1px solid #999;
+    
 }
 
 header #header-nav .menu-mainmenu-container #menu-mainmenu { 
@@ -39,8 +44,8 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
     list-style-type: none;
     width: 50%;
     position: relative;
-    height: 100px;
-    line-height: 100px;
+    height: 70px;
+    line-height: 70px;
 }
 header #header-nav .menu-mainmenu-container #menu-mainmenu li { 
     /*Makes the navigation horizontal*/
@@ -49,7 +54,7 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu li {
     width: 25%;
 }
 header #header-nav .menu-mainmenu-container #menu-mainmenu li a:hover {
-    background: black;
+    background: #006068; /*light green*/
     color:white;
     display: block;
 }
@@ -57,27 +62,44 @@ ul.sub-menu{
     /*This hides the dropdown portions until the hover*/
     display: none; 
 }
-header ul li a{
+header #header-nav .menu-mainmenu-container #menu-mainmenu li a {
     text-decoration: none;
-    color: black;
+    color: #003B49; /*dark green*/
+    font-weight: 400;
+    font-size: 1.25em;
+
 }
-header ul li:hover ul.sub-menu { 
+header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover {
+    background-color: #006068; /*light green*/
+} 
+header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover a {
+    background-color: #006068; /*light green*/
+    color: white;
+} 
+header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover ul.sub-menu { 
     /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
     display:block;
     color: white;
     position:absolute;
     width: 100%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
+    max-width: 200px;
+    line-height: 50px;
+    background-color: #006068; /*light green*/
 }
-header ul li ul.sub-menu li {
-    width: 200px;
+header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li {
     margin-bottom:0px;
     clear: both;
+    width: 90% !important;
+    text-align: left !important;
+    padding-left: 10%;
 }
-header ul li ul.sub-menu li a:hover{
-    background: black;
+header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li:hover {
+    background: #003B49; /*dark green*/
+    color: white;
+    display: block;
+}
+header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li:hover > a {
+    background: #003B49 !important; /*dark green*/
     color: white;
     display: block;
 }
@@ -89,6 +111,12 @@ header{ /*This is the div that contains the nav and header imgs*/
     position: relative; /*Everything that is position absolute uses this as a parent*/
     margin-bottom: 30px;
 }
+#header-img{ /*this is the big image and it's sitting under all the other items*/
+    z-index:-1; /*this is what makes it under all the other items*/
+    position:absolute;
+    left:0;
+    top: 0;
+}
 .logo-lower { /*This is th logo at the bottom of the big header img*/
     position: absolute;
     top: 405px;
@@ -97,11 +125,12 @@ header{ /*This is the div that contains the nav and header imgs*/
 .logo-upper {
     position:absolute;
     left: 20px;
-    top: 12px;
+    top: 3px;
+    height: 64px;
 }
 #header-social{ /*this is a div that contains the social media links*/
     height: 100px;
-    width: 25%;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 0;
@@ -109,8 +138,8 @@ header{ /*This is the div that contains the nav and header imgs*/
 }
 #header-social i { /*This is the LinkedIN and Facebook font Awesome*/
     font-size: 4em;
-    line-height: 100px;
-    margin-right: 15px;
+    line-height: 70px;
+    margin:0 15px 0 0;
 }
         /*++++++++  Header CSS ENDS  ++++++++ */
 
@@ -121,13 +150,13 @@ main {
         there was clashing with Kerstin's CSS and mine. 
     */
     margin-bottom: 20px;
-    background: white;
     width: 940px;
     margin: 0 auto;
 }
 #top-box{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #003B49; /*dark green*/
     margin-bottom: 20px;
+    padding-bottom: 20px;
     height: 275px;
 }
 #top-box h3 {
@@ -172,6 +201,10 @@ main #sub-nav {
 main #sub-nav ul li a{
     text-decoration: none;
     color:grey
+}
+main #sub-nav ul li a:hover {
+    text-decoration: none;
+    color:#003B49; /*dark green*/
 }
 main #sub-nav ul li h3 {
     margin: 0 0 10px 0;
@@ -226,6 +259,12 @@ main #sub-nav ul li h3 {
     border: 1px solid black;
     margin: 35px 5px auto 10px;
 }
+.eventbutton {
+    float: right;
+    clear: both;
+    right: 55px;
+    position: relative;
+}
         /*++++++++  End of Third box of the main  ++++++++*/
 
 
@@ -236,15 +275,13 @@ p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
     margin: 1.414em 0 0.5em;
-    font-weight: inherit;
     line-height: 1.2;
 }
 
 h1 {
     margin-top: 0;
-    font-size: 2.074em;
+    font-size: 1.75em;
 }
-
 h2 {font-size: 1.728em;}
 
 h3 {font-size: 1.44em;}
@@ -278,34 +315,51 @@ footer {
 }
         
 footer form {
-    height: 75px;
+    height: 50px;
     width: 600px;
-    background: white;
+    background: #003B49;
     float: right;
-    border: 1px solid black;
     margin-right: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
             
 }
 footer form [type=email]{
     width: 400px;
-    border: 1px solid black;
-    margin: 15px;
-    height: 40px;
+    margin: 9px;
+    height: 30px;
+    border-radius: 7px;
+    box-sizing:border-box;
+    border: none;
+    outline: none;
 }
 #footer-form{
     float:right;
-    height: 150px;
+    height: 100px;
     width: 650px;
+    border-radius: 10px;
+    position: relative;
+    top: 12px;
 }
 #footer-form p {
     margin: 0;
     padding: 0;
+    font-weight: 700;
 }
 footer form button {
     width: 150px;
-    height: 40px;
+    height: 30px;
     margin: 0;
     display:inline;
+    border-radius: 7px;
+    font-family: lato;
+    font-size: 1em;
+    text-align: center;
+    position: relative; 
+    top: 2px;
+    background: white;
+    outline: none;
+    border: none;
 }
     /* ++++++++  End of Footer CSS  ++++++++ */
         /*FORMER css called   width:50%;  float: left;   padding:20px;  margin-bottom: 20px*/
@@ -313,16 +367,28 @@ footer form button {
               this was to affect service providers page. will need to be changeds
           */ 
 #main {
-    width:50%;  
+    width:66%;  
     float: left;   
     padding:20px;  
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
   
 #aside{
-    width:45%;
+    width:33%;
     float:right;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    background-color: #003B49;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.eventcontainer h1{
+    color: white !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img{
@@ -333,6 +399,7 @@ img{
 button{
     display:block;
     margin:0 auto;
+    margin-bottom: 5px;
 }
 .top{
     width:100%;
@@ -378,3 +445,43 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
+
+                /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
+
+@media only screen and (max-width: 800px){
+header{
+    width: 100%
+}
+
+/*++++++++ Header CSS Starts ++++++++ */
+header #header-nav .menu-mainmenu-container #menu-mainmenu {
+    display: none!important;
+}
+header #header-nav,
+header{
+    width: 100%;
+}
+
+#toggle {
+display: block; 
+}
+
+header #navigation #menu-mobilemenu{
+    width: 100%;
+}
+header #navigation #menu-mobilemenu li{
+    width: 100%;
+    background-color: #006068; /*light green*/
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+header #navigation #menu-mobilemenu li a{
+    text-decoration: none;
+    color:white;
+}
+header #navigation #menu-mobilemenu li a:hover {}
+
+
+} /* End Mobile Styles */

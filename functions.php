@@ -13,7 +13,7 @@ Version: 1.0
 register_sidebar(array('before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>'));
 
 // Register Menus (You'll want these!)
-register_nav_menus(array('main-menu' => __('Main Menu') ));
+register_nav_menus(array('mainmenu' => __('Main Menu'), 'mobilemenu' => __('Mobile Menu')));
 
 // Because WP isn't smart enough to have this automatically set up. 
 add_theme_support('post-thumbnails');
@@ -52,5 +52,7 @@ function get_title_tag() {
     echo ' | ';
     echo 'Seattle, WA';
 }
+// registers our mobile menu script
+//function wp_enqueue_script( $mobile_menu, string $src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js') {}; 
 
 ?>
