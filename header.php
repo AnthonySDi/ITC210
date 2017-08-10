@@ -15,7 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
-    <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
+    <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
 <!--wp head function start-->
  <?PHP wp_head(); ?>
@@ -25,10 +26,11 @@
     <div id="wrapper">
         <header>
             <div id="header-nav">
-                <a href="<?php echo home_url(); ?>" title="click here for home page"><img class="logo-upper" src="<?php bloginfo('template_directory'); ?>/images/logo-smaller.png" /></a>
+                <a href="<?php echo home_url(); ?>" title="click here for home page"><img class="logo-upper" src="<?php bloginfo('template_directory'); ?>/images/kcvc_logo_color.svg" /></a>
     <!--++++ Start of WordPress Nav ++++-->
         <?PHP wp_nav_menu(); ?>
     <!--++++ End of WordPress Nav ++++-->
+<<<<<<< HEAD
 
     <!--++++ Start of WordPress ++++ MOBILE ++++ Nav ++++-->
     <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/menu-icon-large.png" width="50" height="50" alt="Toggle Menu">
@@ -40,11 +42,13 @@
     
 
                 <div id="header-social">
+=======
+           <!--      <div id="header-social">
+>>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                </div>
+                </div> -->
             </div>
-            <img class="logo-lower" src="<?php bloginfo('template_directory'); ?>/images/logo-smaller.png" />
-        <img id="header-img" src="<?php bloginfo('template_directory'); ?>/images/header-img.png" />
+        <img id="header-img" src="<?php bloginfo('template_directory'); ?>/images/kcvchero.jpg" />
         </header>
         <!--header ends here-->
