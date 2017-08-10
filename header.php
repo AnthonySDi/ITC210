@@ -30,7 +30,7 @@
     <!--++++ Start of WordPress Nav ++++-->
         <?PHP wp_nav_menu(); ?>
     <!--++++ End of WordPress Nav ++++-->
-<<<<<<< HEAD
+
 
     <!--++++ Start of WordPress ++++ MOBILE ++++ Nav ++++-->
     <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/menu-icon-large.png" width="50" height="50" alt="Toggle Menu">
@@ -42,7 +42,7 @@
     
 
                 <div id="header-social">
-=======
+
            <!--      <div id="header-social">
 >>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
