@@ -44,11 +44,7 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
     list-style-type: none;
     width: 50%;
     position: relative;
-<<<<<<< HEAD
     height: 70px;
-=======
-    height: 100px;
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
     line-height: 70px;
 }
 header #header-nav .menu-mainmenu-container #menu-mainmenu li { 
@@ -66,18 +62,24 @@ ul.sub-menu{
     /*This hides the dropdown portions until the hover*/
     display: none; 
 }
-<<<<<<< HEAD
+
 header #header-nav .menu-mainmenu-container #menu-mainmenu li a {
-=======
-header ul li a {
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
     text-decoration: none;
     color: #003B49; /*dark green*/
     font-weight: 400;
     font-size: 1.25em;
 
 }
-<<<<<<< HEAD
+
+header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover {
+    background-color: #006068; /*light green*/
+} 
+header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover a {
+    background-color: #006068; /*light green*/
+    color: white;
+} 
+
+
 header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover {
     background-color: #006068; /*light green*/
 } 
@@ -86,16 +88,7 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover a {
     color: white;
 } 
 header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover ul.sub-menu { 
-=======
-header ul li:hover {
-    background-color: #006068; /*light green*/
-} 
-header ul li:hover a {
-    background-color: #006068; /*light green*/
-    color: white;
-} 
-header ul li:hover ul.sub-menu { 
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
+
     /*This wasn't necessary or discussed I wanted to watch the behavior of the links*/
     display:block;
     color: white;
@@ -105,31 +98,22 @@ header ul li:hover ul.sub-menu {
     line-height: 50px;
     background-color: #006068; /*light green*/
 }
-<<<<<<< HEAD
+
 header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li {
-=======
-header ul li ul.sub-menu li {
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
     margin-bottom:0px;
     clear: both;
     width: 90% !important;
     text-align: left !important;
     padding-left: 10%;
 }
-<<<<<<< HEAD
+
 header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li:hover {
-=======
-header ul li ul.sub-menu li:hover {
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
     background: #003B49; /*dark green*/
     color: white;
     display: block;
 }
-<<<<<<< HEAD
+
 header #header-nav .menu-mainmenu-container #menu-mainmenu li ul.sub-menu li:hover > a {
-=======
-header ul li ul.sub-menu li:hover > a {
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
     background: #003B49 !important; /*dark green*/
     color: white;
     display: block;
