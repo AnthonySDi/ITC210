@@ -460,6 +460,11 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
+.entry-title a {
+    font-family: 'Lato' sans-serif;
+    color: white;
+    text-decoration: none;
+}
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
