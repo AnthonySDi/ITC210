@@ -481,6 +481,7 @@ header #header-nav,
 header{
     width: 100%;
 }
+    
 #toggle {
 display: block; 
 position: relative;
