@@ -1,0 +1,9 @@
+RewriteEngine On
+#http://www.thekcvc.org/pg4-kcvc-service-providers.html
+Redirect 301 /pg4-kcvc-service-providers.html http://www.thekcvc.org/resources/service-providers/
+#http://www.thekcvc.org/index.html
+Redirect 301 /index.html http://www.thekcvc.org/about/
+#http://www.thekcvc.org/pg2-kcvc-sitrep-survey.html
+Redirect 301 /pg2-kcvc-sitrep-survey.html http://www.thekcvc.org/about/situation-report/
+#http://www.thekcvc.org/pg3-kcvc-bio-gallery.html
+Redirect 301 /pg3-kcvc-bio-gallery.html http://www.thekcvc.org/about/red-team/

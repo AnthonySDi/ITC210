@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 #wrapper{
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     width: 980px;
 }
 /*++++++++ Header CSS Starts ++++++++ */
@@ -35,15 +35,15 @@ h1, h2, h3, h4 {
     z-index: 2;
     background: rgba(165,169,170,.65);
     border-bottom: 1px solid #999;
-    
+    position: relative;
 }
 
 header #header-nav .menu-mainmenu-container #menu-mainmenu { 
     /* centers and restricts the nav to 50% of the contiaining div */
     margin: 0 auto;
     list-style-type: none;
-    width: 50%;
-    position: relative;
+    width: 70%;
+    float: right;
     height: 70px;
     line-height: 70px;
 }
@@ -138,10 +138,9 @@ header{ /*This is the div that contains the nav and header imgs*/
     left:400px;
 }
 .logo-upper {
-    position:absolute;
-    left: 20px;
-    top: 3px;
-    height: 64px;
+    float: left;
+    margin: 7px 0 0 30px;
+    height: 54px;
 }
 #header-social{ /*this is a div that contains the social media links*/
     height: 100px;
@@ -203,7 +202,7 @@ main #pic-placeholder{
 main #main-content{ 
     /*top section has three boxes this is the far right one*/
     float: right;
-    width:400px;
+    width:550px;
     clear: none;
     margin-right: 20px;
 }
@@ -223,6 +222,15 @@ main #sub-nav ul li a:hover {
 }
 main #sub-nav ul li h3 {
     margin: 0 0 10px 0;
+}
+main #tribe-events-content {
+    background: white;
+}
+main #resources div {
+    width: 33%;
+    display: inline;
+    float: left;
+    padding: 0 30px;
 }
         /*++++++++  END of first box of the Main  +++++++++*/
 
@@ -274,12 +282,21 @@ main #sub-nav ul li h3 {
     border: 1px solid black;
     margin: 35px 5px auto 10px;
 }
-.eventbutton {
-    float: right;
-    clear: both;
-    right: 55px;
+.eventbutton a {
     position: relative;
+    color: white;
+    background-color: #003B49;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    text-decoration: none;
 }
+.eventbutton button {
+   
+}
+
         /*++++++++  End of Third box of the main  ++++++++*/
 
 
@@ -309,7 +326,7 @@ small, .font_small {font-size: 0.833em;}
         /* ++++++++  Start of Footer CSS  ++++++++ */
 footer {
     width: 940px;
-    margin: 0 auto 25px auto;
+    margin: 30px auto 25px auto;
     height: 120px;
     position: relative;
     clear: both;
@@ -324,7 +341,7 @@ footer {
     margin:10px 0 auto 85px;
 }
 #footer-social i { /*This is the LinkedIN and Facebook font Awesome*/
-    font-size: 4em;
+    font-size: 3em;
     line-height: 100px;
     margin: 0 15px 0 0; /*had to move them around when I put them into wordpress*/
 }
@@ -340,13 +357,14 @@ footer form {
             
 }
 footer form [type=email]{
-    width: 400px;
+    width: 420px;
     margin: 9px;
     height: 30px;
     border-radius: 7px;
     box-sizing:border-box;
     border: none;
     outline: none;
+    padding: 0 20px;
 }
 #footer-form{
     float:right;
@@ -381,6 +399,9 @@ footer form button {
    /*Couldn't resolve conflicts on between my css and kerstins for main. 
               this was to affect service providers page. will need to be changeds
           */ 
+main a {
+  color: #003B49; 
+}
 #main {
     width:66%;  
     float: left;   
@@ -388,16 +409,25 @@ footer form button {
     margin-bottom: 20px;
     box-sizing: border-box;
 }
-  
-#aside{
-    width:33%;
+#aside {
     float:right;
+    width:33%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.eventcontainer{
     margin-bottom: 25px;
     background-color: #003B49;
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 20px;
     box-sizing: border-box;
+}
+.eventbutton {
+    text-align: center;
+}
+ a {
+    color: white;
 }
 
 .eventcontainer h1{
@@ -460,14 +490,36 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
+<<<<<<< HEAD
 
+=======
+.entry-title a {
+    font-family: 'Lato' sans-serif;
+    color: white;
+    text-decoration: none;
+}
+>>>>>>> origin/master
 
-                /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
+/*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
 @media only screen and (max-width: 800px){
 header{
     width: 100%
-}
+} 
+    #main, #aside, main {
+        width: 100%;
+        float: none;
+        clear: both;
+        box-sizing: border-box;
+    }
+    .eventcontainer {
+        width: 92%;
+        float: none;
+        padding: 20px;
+        text-align: center;
+        margin: 30px 20px;
+        box-sizing: border-box;
+    }
 
 /*++++++++ Header CSS Starts ++++++++ */
 header #header-nav .menu-mainmenu-container #menu-mainmenu {
@@ -477,9 +529,13 @@ header #header-nav,
 header{
     width: 100%;
 }
-
+    
 #toggle {
 display: block; 
+position: relative;
+left: 264px;
+top: 10px;
+}
 }
 
 header #navigation #menu-mobilemenu{
@@ -496,9 +552,15 @@ header #navigation #menu-mobilemenu li{
 header #navigation #menu-mobilemenu li a{
     text-decoration: none;
     color:white;
+    position: relative;
 }
 header #navigation #menu-mobilemenu li a:hover {}
 
 
 } /* End Mobile Styles */
+<<<<<<< HEAD
 
+=======
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
+>>>>>>> origin/master
