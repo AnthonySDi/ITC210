@@ -1,3 +1,22 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Gist
+ @bellachen
+ Sign out
+ Unwatch 1
+  Star 0
+  Fork 0 AnthonySDi/ITC210
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki Insights 
+Tree: bd4d3390ec Find file Copy pathITC210/style.css
+bd4d339  2 days ago
+@fncreative fncreative Changed CSS
+4 contributors @fncreative @AnthonySDi @bellachen @KerstinGraudins
+RawBlameHistory      
+514 lines (463 sloc)  10.9 KB
 /*
 Theme Name: KCVC
 Theme URI: www.kcvc.org
@@ -223,16 +242,14 @@ main #sub-nav ul li a:hover {
 main #sub-nav ul li h3 {
     margin: 0 0 10px 0;
 }
-
+main #tribe-events-content {
+    background: white;
+}
 main #resources div {
     width: 33%;
     display: inline;
     float: left;
     padding: 0 30px;
-}
-
-main #tribe-events-content {
-    background: white;
 }
         /*++++++++  END of first box of the Main  +++++++++*/
 
@@ -486,6 +503,11 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
+.entry-title a {
+    font-family: 'Lato' sans-serif;
+    color: white;
+    text-decoration: none;
+}
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
@@ -502,7 +524,7 @@ header #header-nav,
 header{
     width: 100%;
 }
-
+    
 #toggle {
 display: block; 
 position: relative;
@@ -532,9 +554,5 @@ header #navigation #menu-mobilemenu li a:hover {}
 
 
 } /* End Mobile Styles */
-
-@media only screen and (max-width: 800px) {
-      #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
-        width: 240px;
-    }
-}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
