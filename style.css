@@ -1,7 +1,7 @@
 /*
 Theme Name: KCVC
 Theme URI: www.kcvc.org
-Author: Anthony, Bella, Dann, Kerstin
+Author: Anthony, Bella, Dan, Kerstin
 Author URI: www.dannfreydesign.com
 Description: Website created King County Veterans Consortium. Dann and Bella were the designers and Anthony and Kerstin are the developers. 
 Version: 1.0
@@ -223,6 +223,13 @@ main #sub-nav ul li a:hover {
 }
 main #sub-nav ul li h3 {
     margin: 0 0 10px 0;
+}
+
+main #resources div {
+    width: 33%;
+    display: inline;
+    float: left;
+    padding: 0 30px;
 }
         /*++++++++  END of first box of the Main  +++++++++*/
 
@@ -460,11 +467,6 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
-.entry-title a {
-    font-family: 'Lato' sans-serif;
-    color: white;
-    text-decoration: none;
-}
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
@@ -481,7 +483,7 @@ header #header-nav,
 header{
     width: 100%;
 }
-    
+
 #toggle {
 display: block; 
 position: relative;
@@ -511,3 +513,9 @@ header #navigation #menu-mobilemenu li a:hover {}
 
 
 } /* End Mobile Styles */
+
+@media only screen and (max-width: 800px) {
+      #header-nav { /*Contains the the Nav UL, upper logo and social media div/icons*/
+        width: 240px;
+    }
+}
