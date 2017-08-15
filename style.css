@@ -42,8 +42,8 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
     /* centers and restricts the nav to 50% of the contiaining div */
     margin: 0 auto;
     list-style-type: none;
-    width: 50%;
-    position: relative;
+    width: 70%;
+    float: right;
     height: 70px;
     line-height: 70px;
 }
@@ -138,10 +138,9 @@ header{ /*This is the div that contains the nav and header imgs*/
     left:400px;
 }
 .logo-upper {
-    position:absolute;
-    left: 20px;
-    top: 3px;
-    height: 64px;
+    float: left;
+    margin: 7px 0 0 30px;
+    height: 54px;
 }
 #header-social{ /*this is a div that contains the social media links*/
     height: 100px;
@@ -285,12 +284,21 @@ main #tribe-events-content {
     border: 1px solid black;
     margin: 35px 5px auto 10px;
 }
-.eventbutton {
-    float: right;
-    clear: both;
-    right: 55px;
+.eventbutton a {
     position: relative;
+    color: white;
+    background-color: #003B49;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    text-decoration: none;
 }
+.eventbutton button {
+   
+}
+
         /*++++++++  End of Third box of the main  ++++++++*/
 
 
@@ -320,7 +328,7 @@ small, .font_small {font-size: 0.833em;}
         /* ++++++++  Start of Footer CSS  ++++++++ */
 footer {
     width: 940px;
-    margin: 0 auto 25px auto;
+    margin: 30px auto 25px auto;
     height: 120px;
     position: relative;
     clear: both;
@@ -335,7 +343,7 @@ footer {
     margin:10px 0 auto 85px;
 }
 #footer-social i { /*This is the LinkedIN and Facebook font Awesome*/
-    font-size: 4em;
+    font-size: 3em;
     line-height: 100px;
     margin: 0 15px 0 0; /*had to move them around when I put them into wordpress*/
 }
@@ -351,13 +359,14 @@ footer form {
             
 }
 footer form [type=email]{
-    width: 400px;
+    width: 420px;
     margin: 9px;
     height: 30px;
     border-radius: 7px;
     box-sizing:border-box;
     border: none;
     outline: none;
+    padding: 0 20px;
 }
 #footer-form{
     float:right;
@@ -392,6 +401,9 @@ footer form button {
    /*Couldn't resolve conflicts on between my css and kerstins for main. 
               this was to affect service providers page. will need to be changeds
           */ 
+main a {
+  color: #003B49; 
+}
 #main {
     width:66%;  
     float: left;   
@@ -400,15 +412,18 @@ footer form button {
     box-sizing: border-box;
 }
   
-#aside{
+.eventcontainer{
     width:33%;
     float:right;
     margin-bottom: 25px;
     background-color: #003B49;
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0 20px;
     box-sizing: border-box;
+}
+ a {
+    color: white;
 }
 
 .eventcontainer h1{

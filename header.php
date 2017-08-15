@@ -37,18 +37,6 @@
 </div>
         <?php wp_nav_menu(array('theme_location' => 'mobilemenu','container' => 'div','container_id' => 'navigation',)); ?>
     <!--++++ End of WordPress ++++ MOBILE ++++ Nav ++++-->
-
-
-    
-
-                <div id="header-social">
-
-           <!--      <div id="header-social">
->>>>>>> b3540a2a4d9bbba184bdcfd26e40e1b5ca6f8db5
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                </div> -->
-            </div>
         <img id="header-img" src="<?php bloginfo('template_directory'); ?>/images/kcvchero.jpg" />
         </header>
         <!--header ends here-->
