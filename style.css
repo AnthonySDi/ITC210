@@ -203,7 +203,7 @@ main #pic-placeholder{
 main #main-content{ 
     /*top section has three boxes this is the far right one*/
     float: right;
-    width:400px;
+    width:350px;
     clear: none;
     margin-right: 20px;
 }
