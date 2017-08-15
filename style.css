@@ -495,7 +495,6 @@ margin: 7px 0 0 5px;
     color: white;
     text-decoration: none;
 }
->>>>>>> origin/master
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
@@ -517,7 +516,6 @@ header{
         margin: 30px 20px;
         box-sizing: border-box;
     }
-
 /*++++++++ Header CSS Starts ++++++++ */
 header #header-nav .menu-mainmenu-container #menu-mainmenu {
     display: none!important;
@@ -525,16 +523,13 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
 header #header-nav,
 header{
     width: 100%;
-}
-    
+}  
 #toggle {
 display: block; 
 position: relative;
-left: 264px;
+left: 200px;
 top: 10px;
 }
-}
-
 header #navigation #menu-mobilemenu{
     width: 100%;
 }
@@ -551,7 +546,9 @@ header #navigation #menu-mobilemenu li a{
     color:white;
     position: relative;
 }
-header #navigation #menu-mobilemenu li a:hover {}
+header #navigation #menu-mobilemenu li a:hover {
+    color: #003B49
+}
 
 
 } /* End Mobile Styles */
