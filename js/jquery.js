@@ -12,3 +12,16 @@ $(document).ready(function () {
         }
     });
 });
+
+
+$(function () {
+    $('#services').change(function () {
+        var selected = $(this).val()
+        if (selected == 'all') {
+            $('.provider').show();
+        } else {
+            $('.provider').hide();
+            $('.' + $(this).val()).show();
+        }
+    });
+});
