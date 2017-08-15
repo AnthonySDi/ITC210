@@ -2,6 +2,7 @@
 <head>
     <title><?php get_title_tag(); ?></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Begin Toggle Menu -->     
     <script type="text/javascript" charset="utf-8">
     $(window).load(function() { // start function
