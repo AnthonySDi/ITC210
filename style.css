@@ -231,6 +231,10 @@ main #resources div {
     float: left;
     padding: 0 30px;
 }
+
+main #tribe-events-content {
+    background: white;
+}
         /*++++++++  END of first box of the Main  +++++++++*/
 
 
