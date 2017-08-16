@@ -490,13 +490,19 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 .entry-title a {
     font-family: 'Lato' sans-serif;
     color: white;
     text-decoration: none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
@@ -524,7 +530,6 @@ header div{
         margin: 30px 20px;
         box-sizing: border-box;
     }
-
 /*++++++++ Header CSS Starts ++++++++ */
 header #header-nav .menu-mainmenu-container #menu-mainmenu {
     display: none!important;
@@ -532,16 +537,13 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu {
 header #header-nav,
 header{
     width: 100%;
-}
-    
+}  
 #toggle {
 display: block; 
 position: relative;
-left: 264px;
+left: 200px;
 top: 10px;
 }
-}
-
 header #navigation #menu-mobilemenu{
     width: 100%;
 }
@@ -561,6 +563,12 @@ header #navigation #menu-mobilemenu li a{
 header #navigation #menu-mobilemenu li a:hover {
     color: #003B49
 }
+<<<<<<< HEAD
 
 
 } /* End Mobile Styles */
+=======
+
+
+} /* End Mobile Styles */
+>>>>>>> origin/master
