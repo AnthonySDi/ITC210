@@ -52,15 +52,33 @@ function get_title_tag() {
     echo ' | ';
     echo 'Seattle, WA';
 }
-// registers our mobile menu script
-//function wp_enqueue_script( $mobile_menu, string $src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js') {}; 
 
-//function the_content_filter($content) {
-//    $block = join("|",array("one_third", "team_member"));
-//    $rep = preg_replace("/(<p>)?\[(" . $block . ")(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
-//    $rep = preg_replace("/(<p>)?\[\/(" . $block . ")](<\/p>|<br \/>)?/","[/$2]",$rep);
-//return $rep;
-//}
-//add_filter("the_content", "the_content_filter");
 remove_filter( 'the_content', 'wpautop' );
+
+
+function get_providers_gallery() {
+	
+	global $post; 
+	
+	$attachments = get_children(array('post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order'));
+	
+
+	if ($attachments) {
+		
+		echo '<div id="resources">'; // open flexslider markup
+		
+		foreach ($attachments as $attachment) {
+			
+			echo '<div class="'.get_post_field('post_content', $attachment->ID).'">';
+			echo wp_get_attachment_image($attachment->ID, 'medium'); // generate image tag
+			echo '<p>'.get_post_field('post_excerpt', $attachment->ID).'</p>';
+			echo '</div>';
+			
+		}
+		
+		echo '</div>'; // close resources div
+		
+	}
+	
+}
 ?>

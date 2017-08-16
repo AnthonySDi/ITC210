@@ -41,6 +41,7 @@ h1, h2, h3, h4 {
 header #header-nav .menu-mainmenu-container #menu-mainmenu { 
     /* centers and restricts the nav to 50% of the contiaining div */
     margin: 0 auto;
+    margin-right: 8%;
     list-style-type: none;
     width: 70%;
     float: right;
@@ -68,7 +69,6 @@ header #header-nav .menu-mainmenu-container #menu-mainmenu li a {
     color: #003B49; /*dark green*/
     font-weight: 400;
     font-size: 1.25em;
-
 }
 
 header #header-nav .menu-mainmenu-container #menu-mainmenu li:hover {
@@ -490,20 +490,24 @@ margin: 0 10px 0 0;
 float: left;
 margin: 7px 0 0 5px;
 }
-<<<<<<< HEAD
 
-=======
 .entry-title a {
     font-family: 'Lato' sans-serif;
     color: white;
     text-decoration: none;
 }
->>>>>>> origin/master
+
 
 /*+++++++++++++++ PAGE BREAK  +++++++++++++++*/
 
 @media only screen and (max-width: 800px){
-header{
+#menu-mainmenu-container,
+#navigation,
+#header-img,
+#wrapper,
+#header-img,
+header,
+header div{
     width: 100%
 } 
     #main, #aside, main {
@@ -554,13 +558,9 @@ header #navigation #menu-mobilemenu li a{
     color:white;
     position: relative;
 }
-header #navigation #menu-mobilemenu li a:hover {}
+header #navigation #menu-mobilemenu li a:hover {
+    color: #003B49
+}
 
 
 } /* End Mobile Styles */
-<<<<<<< HEAD
-
-=======
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
->>>>>>> origin/master
