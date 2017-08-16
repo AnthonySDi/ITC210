@@ -6,12 +6,12 @@
             </div>
             <div id="footer-form" class='round'>
                 <p>
-                    SIGN UP FOR THE MUSTER REPORT
+                SIGN UP FOR THE MUSTER REPORT
                 </p>
                 <form>
                     <input type="email" placeholder="EMAIL ADDRESS" />
                     <button type="submit" class='round'>
-                        Sign Up
+                    Sign Up
                     </button>
                 </form>
             </div>
